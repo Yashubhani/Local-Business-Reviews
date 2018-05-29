@@ -1,0 +1,95 @@
+
+
+Create EXTERNAL TABLE IF NOT EXISTS Food(
+
+business_id string,
+categories_001  String,
+city   String,
+name  String,
+review_count int,
+stars  Double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION
+'/user/yashubh/LocalBussiness/Food';
+
+
+Create EXTERNAL TABLE IF NOT EXISTS Education(
+
+business_id string,
+categories_001  String,
+city   String,
+name  String,
+review_count int,
+stars  Double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION
+'/user/yashubh/LocalBussiness/Education';
+
+
+Create EXTERNAL TABLE IF NOT EXISTS Entertainment(
+
+business_id string,
+categories_001  String,
+city   String,
+name  String,
+review_count int,
+stars  Double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION
+'/user/yashubh/LocalBussiness/Entertainment';
+
+
+Create EXTERNAL TABLE IF NOT EXISTS Medical(
+
+business_id string,
+categories_001  String,
+city   String,
+name  String,
+review_count int,
+stars  Double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION
+'/user/yashubh/LocalBussiness/Medical';
+
+
+Create EXTERNAL TABLE IF NOT EXISTS Shopping(
+
+business_id string,
+categories_001  String,
+city   String,
+name  String,
+review_count int,
+stars  Double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION
+'/user/yashubh/LocalBussiness/Shopping';
+
+
+Create EXTERNAL TABLE IF NOT EXISTS Services(
+
+business_id string,
+categories_001  String,
+city   String,
+name  String,
+review_count int,
+stars  Double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION
+'/user/yashubh/LocalBussiness/Services';
+
+
+Create EXTERNAL TABLE IF NOT EXISTS crosstable(
+
+business_id string,
+categories_001  String,
+name  String,
+city   String,
+stars  Double,
+review_count int,
+totalfunny int,
+totalcool int,
+totaluseful int)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION
+'/user/yashubh/LocalBussiness/crosstable';
+
+
+*******************************************************
+TO INSERT DATA INTO THE TABLE :
+*******************************************************
+
+insert overwrite table <tablename>
+<select statement without limit>;

@@ -1,0 +1,46 @@
+select business_id, city, name, review_count, stars
+from Food
+where stars=5
+group by business_id, city, name, review_count, stars
+order by review_count desc
+limit 10;
+
+
+select business_id, city, name, review_count, stars
+from Education
+where stars=5
+group by business_id, city, name, review_count, stars
+order by review_count desc
+limit 10; 
+
+
+select business_id, city, name, review_count, stars
+from Entertainment
+where stars=5
+group by business_id, city, name, review_count, stars
+order by review_count desc
+limit 10; 
+
+
+select business_id, city, name, review_count, stars
+from Medical
+where stars=5
+group by business_id, city, name, review_count, stars
+order by review_count desc
+limit 10; 
+
+
+select business_id, city, name, review_count, stars
+from Services
+where stars=5
+group by business_id, city, name, review_count, stars
+order by review_count desc
+limit 12; 
+
+
+select business_id, city, name, review_count, stars
+from Shopping
+where stars=5
+group by business_id, city, name, review_count, stars
+order by review_count desc
+limit 10; 

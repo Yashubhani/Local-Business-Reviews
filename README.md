@@ -1,4 +1,4 @@
-# Local-Business-Reviews
+# Local Business Reviews
 
 ![1](https://user-images.githubusercontent.com/39716074/40634598-b35887a2-62aa-11e8-842f-20934ef9dba3.jpg)
 
